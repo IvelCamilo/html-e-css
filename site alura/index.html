@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alura - Sua plataforma de estudos para o futuro da sua carreira">
+    <meta name="keywords" content="plataforma de estudos, Alura, cursos online, programação, design">
+    <meta name="author" content="Alura">
+    <title>Alura - Plataforma de Estudos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <h1>Alura</h1>
+            <p>Transformando sua carreira com aprendizado contínuo</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre" class="menu-item">Sobre</a></li>
+                <li><a href="#beneficios" class="menu-item">Benefícios</a></li>
+                <li><a href="#contato" class="menu-item">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="sobre" class="intro">
+        <h2>O que é a Alura?</h2>
+        <p>A Alura é uma plataforma de cursos online que oferece aprendizado prático nas áreas de programação, design, negócios e muito mais. Com uma metodologia inovadora, você pode aprender no seu ritmo, com conteúdo atualizado e de qualidade.</p>
+    </section>
+
+   
+    <section id="beneficios">
+        <h2>Por que escolher a Alura?</h2>
+        <div class="beneficio-item">
+            <h3>Aprendizado Flexível</h3>
+            <p>Estude de qualquer lugar, a qualquer hora. A Alura se adapta à sua rotina.</p>
+        </div>
+        <div class="beneficio-item">
+            <h3>Conteúdo Atualizado</h3>
+            <p>Novos cursos são lançados constantemente para acompanhar as últimas tendências do mercado.</p>
+        </div>
+        <div class="beneficio-item">
+            <h3>Certificados Reconhecidos</h3>
+            <p>Receba certificados para enriquecer seu currículo e melhorar suas chances no mercado de trabalho.</p>
+        </div>
+    </section>
+
+   
+    <section id="contato" class="contato">
+        <h2>Entre em contato</h2>
+        <form id="formContato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required aria-label="Digite seu nome">
+            <div class="error-message" id="nome-error"></div>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required aria-label="Digite seu e-mail">
+            <div class="error-message" id="email-error"></div>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required aria-label="Digite sua mensagem"></textarea>
+            <div class="error-message" id="mensagem-error"></div>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensagem-sucesso" style="display:none; color: green;">Obrigado por entrar em contato! Responderemos em breve.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alura. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
